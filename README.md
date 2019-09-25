@@ -19,6 +19,10 @@ If the above is installed, you can now install Discord.js with voice support.
 
 `npm install discord.js node-opus`
 
+To allow the bot to join voice channel you need to install FFmpeg.
+
+`npm install ffmpeg-binaries`
+
 ### Usage
 
 Open a command prompt and relocate to your project folder and run the following command: `node bot.js`.
