@@ -1,5 +1,5 @@
 const fs = require('fs');
-const Discord = require("discord.js")
+const Discord = require("discord.js");
 const ConfigFile = require("./config");
 
 const client = new Discord.Client();
@@ -14,12 +14,10 @@ for (const file of commandFiles) {
 }
 
 client.on("ready", () => {
-
   console.log(`Logged in as ${client.user.tag}!`);
 })
 
 client.on("message", message => {
-
   if (!message.content.startsWith(ConfigFile.prefix) || message.author.bot) return;
 
   const args = message.content.slice(ConfigFile.prefix.length).split(/ +/);
