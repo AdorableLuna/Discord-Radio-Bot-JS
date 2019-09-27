@@ -2,6 +2,7 @@
   "stations":[
     {"id":"slam", "name":"Slam!", "url": "http://stream.radiocorp.nl/web14_mp3"},
     {"id":"skyradio", "name":"Sky Radio", "url": "http://playerservices.streamtheworld.com/api/livestream-redirect/SKYRADIO.mp3"},
-    {"id":"radio538", "name":"Radio 538", "url": "http://18973.live.streamtheworld.com/RADIO538.mp3"}
+    {"id":"radio538", "name":"Radio 538", "url": "http://18973.live.streamtheworld.com/RADIO538.mp3"},
+    {"id":"qmusic", "name": "Qmusic", "url": "https://icecast-qmusicnl-cdp.triple-it.nl/Qmusic_nl_live_96.mp3"}
   ]
 }
