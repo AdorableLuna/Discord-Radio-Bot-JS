@@ -9,5 +9,12 @@
   },
   "keywords": [],
   "author": "Bláckfur#6145",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "ffmpeg-binaries": "^4.0.0",
+    "node-gyp": "^5.0.4",
+    "node-opus": "^0.3.2",
+    "windows-build-tools": "^5.2.2"
+  }
 }
