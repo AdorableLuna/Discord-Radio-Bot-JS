@@ -25,5 +25,5 @@ To allow the bot to join voice channel you need to install FFmpeg.
 
 ### Usage
 
-Open a command prompt and relocate to your project folder and run the following command: `node bot.js`.
+Open a command prompt and relocate to your project folder and run the following command: `npm run start` or `node bot.js`.
 To stop the bot, press CTRL-C.
