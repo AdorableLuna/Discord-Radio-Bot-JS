@@ -28,6 +28,16 @@ client.on("message", message => {
 	}
 })
 
+client.on("voiceStateUpdate", function(oldMember, newMember) {
+  const voiceChannel = oldMember.voiceChannel;
+
+  if (voiceChannel != null) {
+    if (voiceChannel.members.size == 1 && voiceChannel.members.first().user.id == 631589192849293312) {
+      voiceChannel.leave();
+    }
+  }
+})
+
 function initializeCommands() {
 	const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 
