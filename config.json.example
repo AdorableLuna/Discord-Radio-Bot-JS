@@ -1,4 +1,5 @@
 {
+	"clientId": your-client-id-goes-here,
 	"prefix": "/",
 	"token": "your-token-goes-here"
 }

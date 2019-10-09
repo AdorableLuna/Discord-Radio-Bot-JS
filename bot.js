@@ -32,7 +32,7 @@ client.on("voiceStateUpdate", function(oldMember, newMember) {
   const voiceChannel = oldMember.voiceChannel;
 
   if (voiceChannel != null) {
-    if (voiceChannel.members.size == 1 && voiceChannel.members.first().user.id == 631589192849293312) {
+    if (voiceChannel.members.size == 1 && voiceChannel.members.first().user.id == ConfigFile.clientId) {
       voiceChannel.leave();
     }
   }
