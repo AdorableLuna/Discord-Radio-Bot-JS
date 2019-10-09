@@ -14,7 +14,7 @@ module.exports = {
     const stationsEmbed = new Discord.RichEmbed()
         .setColor('#eb7134')
         .setTitle('All available radio stations')
-        .setDescription(stations);
+        .setDescription(stations + "\nCreated with \:heart: by Bláckfur#6145");
 
     message.channel.send(stationsEmbed);
 	},

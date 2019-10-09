@@ -1,8 +1,13 @@
 {
   "stations":[
+    {"id":"funxnl", "name":"FunX NL", "url": "http://icecast.omroep.nl/funx-sb-mp3"},
+    {"id":"radio10", "name":"Radio 10", "url": "http://19993.live.streamtheworld.com/RADIO10.mp3"},
+    {"id":"radio538", "name":"Radio 538", "url": "http://18973.live.streamtheworld.com/RADIO538.mp3"},
     {"id":"slam", "name":"Slam!", "url": "http://stream.radiocorp.nl/web14_mp3"},
     {"id":"skyradio", "name":"Sky Radio", "url": "http://playerservices.streamtheworld.com/api/livestream-redirect/SKYRADIO.mp3"},
-    {"id":"radio538", "name":"Radio 538", "url": "http://18973.live.streamtheworld.com/RADIO538.mp3"},
+    {"id":"skyradio80", "name":"Sky Radio 80's", "url": "http://playerservices.streamtheworld.com/api/livestream-redirect/SRGSTR04.mp3"},
+    {"id":"skyradio90", "name":"Sky Radio 90's", "url": "http://playerservices.streamtheworld.com/api/livestream-redirect/SRGSTR05.mp3"},
+    {"id":"skyradio00", "name":"Sky Radio 00's", "url": "http://playerservices.streamtheworld.com/api/livestream-redirect/SRGSTR06.mp3"},
     {"id":"qmusic", "name": "Qmusic", "url": "https://icecast-qmusicnl-cdp.triple-it.nl/Qmusic_nl_live_96.mp3"}
   ]
 }
