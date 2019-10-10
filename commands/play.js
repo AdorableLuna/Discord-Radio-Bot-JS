@@ -12,7 +12,7 @@ module.exports = {
     }
 
 		if (stations.every(station => station.id != args[0])) {
-			message.channel.send(`\`${args[0]}\` is not a valid station.`);
+			message.channel.send(`\`${args[0]}\` is not a valid station. Type \`/stations\` for a list with all available stations.`);
 			return;
 		}
 
@@ -20,6 +20,7 @@ module.exports = {
 			if (station.id === args[0]) {
 				message.member.voiceChannel.join().then(connection => {
 		      console.log(`Connected to ${connection.channel.name} voice channel. Playing ${station.name}`);
+					message.channel.send(`Now playing ${station.name}.`)
 
 		      connection.playArbitraryInput(station.url, {volume: .05});
 		    })
