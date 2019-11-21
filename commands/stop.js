@@ -1,9 +1,12 @@
 const ConfigFile = require("../config");
+const play = require('./play');
 
 module.exports = {
 	name: 'stop',
 	description: 'Stop a stream.',
 	execute(message, args) {
+    const StreamDispatcher = play.getStreamDispatcher();
+
 		if (!message.member.voiceChannel) {
 			message.channel.send("You are currently not connected to any voice channels.");
 			return;
@@ -18,6 +21,9 @@ module.exports = {
 			}
 		}
 
+		if(StreamDispatcher) {
+			StreamDispatcher.end();
+		}
     message.member.voiceChannel.leave();
 	},
 };
